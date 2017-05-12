@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <title>Conversor</title>
+  <meta name="description" content="Conversor de medidas">
+
+  <!-- Mobile Specific Metas-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/normalize.css" rel="stylesheet" type="text/css">
+     <link href="./assets/css/global.css" rel="stylesheet" type="text/css">
+  <!-- FONT-->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!--XRegExp-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xregexp/2.0.0/xregexp-all-min.js"></script>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/medida.js"></script>
+  <script type="text/javascript" src="assets/js/temperature.js"></script>
+
+
+</head>
+<body>
+
+  <div class="container">
+    <br>
+    <h1>Conversor de Temperatura</h1>
+    <br>
+    <div class="seccion_central">
+      
+       <table>
+      <tr>
+        <th>Introduzca temperatura (ejemplos: 373 ( c (to) k/C (to) K, c (to) f/C (to) F), F (to) C, f (to) c, F (to) K, f (to) k, K (to) F, k (to) f, K (to) C, k (to) c):</th>
+        <td><input id="convert" autofocus onchange="main();" placeholder="0K" size="50"></td>
+      </tr>
+      <tr>
+        <th>Temperatura convertida:</th>
+        <td><span id="converted"></span></td>
+      </tr>
+    </table>
+      
+      
+      
+      
+    </div>
+  </div>
+
+
+  
+</body>
+</html>

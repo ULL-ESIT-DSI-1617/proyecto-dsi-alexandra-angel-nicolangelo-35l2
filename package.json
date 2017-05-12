@@ -1,0 +1,41 @@
+{
+  "name": "eliminando-switch-smell-alexandra-angel-nicolangelo-35l2",
+  "version": "1.0.0",
+  "description": "Practica eliminando switch smell",
+  "main": "index.js",
+  "bin": {
+    "eliminando-switch-smell-alexandra-angel-nicolangelo-35l2": "main.js"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-alexandra-angel-nicolangelo-35l2.git"
+  },
+  "author": "Alexandra, Angel, Nicolangelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-alexandra-angel-nicolangelo-35l2/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-alexandra-angel-nicolangelo-35l2#readme",
+  "dependencies": {
+    "async": "^2.3.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.1",
+    "cookie-signature": "^1.0.6",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "fs-extra": "^2.1.2",
+    "gh-pages": "^0.12.0",
+    "gitbook": "^3.2.2",
+    "node": "0.0.0",
+    "pbkdf2-password": "^1.2.1"
+  }
+}
