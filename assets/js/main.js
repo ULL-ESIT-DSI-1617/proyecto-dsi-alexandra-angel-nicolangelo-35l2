@@ -48,6 +48,7 @@ function checkIfUserIsLoged() {
 
 //Hacemos logout (borramos cookie y redirigimos)
 function doLogout() {
+    /*Coge las cookies que tiene en ese documento*/
     document.cookie = "username=;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
     console.log(getCookie("username"))
     window.location.href = "../pages/login.html";
