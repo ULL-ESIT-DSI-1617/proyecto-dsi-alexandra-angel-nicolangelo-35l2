@@ -1,3 +1,4 @@
+var chai = require('chai');
 var assert = chai.assert;
 
 suite('temperature', function() {
@@ -17,3 +18,5 @@ suite('temperature', function() {
         assert.match(converted.innerHTML, /Desconozco como convertir desde "x" hasta "f"/);
     });
 });
+
+//funciona
