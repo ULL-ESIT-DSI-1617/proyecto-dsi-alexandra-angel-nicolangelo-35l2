@@ -1,6 +1,6 @@
 var chai = require('chai');
 var assert = chai.assert;
-var convert = document.getElementById('convert').value;
+var convert = "32F to C";
 
 suite('temperature', function() {
     test('32F = 0 Celsius', function() {
