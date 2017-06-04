@@ -18,3 +18,5 @@ suite('temperature', function() {
         assert.match(converted.innerHTML, /Desconozco como convertir desde "x" hasta "f"/);
     });
 });
+
+//funciona
