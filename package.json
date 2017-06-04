@@ -22,7 +22,7 @@
     "url": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-alexandra-angel-nicolangelo-35l2/issues"
   },
   "homepage": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-alexandra-angel-nicolangelo-35l2#readme",
-  "dependencies": {
+  "devDependencies": {
     "async": "^2.3.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.1",
@@ -37,5 +37,14 @@
     "gitbook": "^3.2.2",
     "node": "0.0.0",
     "pbkdf2-password": "^1.2.1"
+    "chai": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-firefox-launcher": "*",
+    "karma-html2js-preprocessor": "*",
+    "karma-mocha": "*",
+    "karma-phantomjs-launcher": "*",
+    "mocha": "*",
+    "travis": "*"
   }
 }
