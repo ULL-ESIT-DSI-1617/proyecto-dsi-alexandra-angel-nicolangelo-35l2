@@ -1,6 +1,9 @@
 var chai = require('chai');
 var assert = chai.assert;
 var convert = "32F to C";
+var main = "../assets/js/main.js";
+var temperature = "../assets/js/temperature.js";
+var medida = "../assets/js/medida.js";
 
 suite('temperature', function() {
     test('32F = 0 Celsius', function() {
