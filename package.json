@@ -10,7 +10,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --ui tdd"
   },
   "repository": {
     "type": "git",
