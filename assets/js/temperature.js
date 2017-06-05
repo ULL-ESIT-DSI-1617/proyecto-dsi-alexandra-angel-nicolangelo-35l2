@@ -1,3 +1,4 @@
+var Medida = require('./medida.js');
 (function(){
   
     var measures = Medida.measures || {};
