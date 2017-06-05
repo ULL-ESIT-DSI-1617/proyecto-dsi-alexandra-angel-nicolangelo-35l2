@@ -8,4 +8,4 @@
       return false;
   }
   exports.main = main;
-})(this);
+})(self);
