@@ -10,7 +10,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha --ui tdd"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
