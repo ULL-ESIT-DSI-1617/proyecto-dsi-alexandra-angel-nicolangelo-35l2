@@ -3,22 +3,22 @@ var assert = chai.assert;
 var convert = "32F to C";
 var main = require('../assets/js/main.js');
 var temperature = require('../assets/js/temperature.js');
-var medida =require('../assets/js/medida.js');
+var medida = require('../assets/js/medida.js');
 
 suite('temperature', function() {
     test('32F = 0 Celsius', function() {
         convert.value = "32F to C";
-        main();
+        main;
         assert.deepEqual(converted.innerHTML, "0 Celsius");
     });
     test('45C = 113.0 Farenheit', function() {
         convert.value = "45C to F";
-        main();
+        main;
         assert.deepEqual(converted.innerHTML, "113 Farenheit");
     });
     test('5X = error', function() {
         convert.value = "5X to F";
-        main();
+        main;
         assert.match(converted.innerHTML, /Desconozco como convertir desde "x" hasta "f"/);
     });
 });
