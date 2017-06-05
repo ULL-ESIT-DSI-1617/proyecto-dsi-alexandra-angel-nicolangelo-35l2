@@ -1,4 +1,4 @@
-var chai = require('chai');
+var chai = "chai.js"; 
 var assert = chai.assert;
 
 suite('temperature', function() {
