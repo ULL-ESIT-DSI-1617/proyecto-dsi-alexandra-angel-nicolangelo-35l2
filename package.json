@@ -10,7 +10,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers Chrome,Firefox"
   },
   "repository": {
     "type": "git",
