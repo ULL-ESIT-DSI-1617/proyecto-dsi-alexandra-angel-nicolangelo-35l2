@@ -1,27 +1,27 @@
 {
-  "name": "eliminando-switch-smell-alexandra-angel-nicolangelo-35l2",
+  "name": "proyecto-dsi-alexandra-angel-nicolangelo-35l2",
   "version": "1.0.0",
-  "description": "Practica eliminando switch smell",
+  "description": "Proyecto final dsi",
   "main": "index.js",
   "bin": {
-    "eliminando-switch-smell-alexandra-angel-nicolangelo-35l2": "main.js"
+    "proyecto-dsi-alexandra-angel-nicolangelo-35l2": "server.js"
   },
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-alexandra-angel-nicolangelo-35l2.git"
+    "url": "git+https://github.com/ULL-ESIT-DSI-1617/proyecto-dsi-alexandra-angel-nicolangelo-35l2.git"
   },
   "author": "Alexandra, Angel, Nicolangelo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-alexandra-angel-nicolangelo-35l2/issues"
+    "url": "https://github.com/ULL-ESIT-DSI-1617/proyecto-dsi-alexandra-angel-nicolangelo-35l2/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-alexandra-angel-nicolangelo-35l2#readme",
+  "homepage": "https://github.com/ULL-ESIT-DSI-1617/proyecto-dsi-alexandra-angel-nicolangelo-35l2#readme",
   "dependencies": {
     "async": "^2.3.0",
     "bcrypt-nodejs": "0.0.3",
