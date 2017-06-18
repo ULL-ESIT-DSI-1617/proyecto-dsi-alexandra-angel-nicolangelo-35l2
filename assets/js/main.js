@@ -5,6 +5,8 @@
         var valor = document.getElementById('convert').value,
             elemento = document.getElementById('converted');
         elemento.innerHTML = Medida.convertir(valor);
+        //enviamos al index la temperatura final para su inclusion en la base de datos
+        t_convertida = document.getElementById("temperatura").value = Medida.convertir(valor);
         return false;
     }
     exports.main = main;
