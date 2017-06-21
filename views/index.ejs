@@ -2,28 +2,40 @@
 <html lang="es">
   <head>
     <% include head %>
+  
   </head>
 <!-- onLoad es un evento que se ejecuta cuando se ha cargado la etiqueta -->
 <body onLoad="checkIfUserIsLoged()">
-<div class="container">
-    <h1>Conversor de Temperatura</h1>
+  <div class="container">
+    <h1>Conversor de Temperaturaaa</h1>
     <div class="seccion_central">
+    
+    <div>
+      <!--Hacemos uso de las cookies-->
       <p>Bienvenido, <span id="username" name="username"></span>
-      <p id="logoutButton" onClick="doLogout()">Cerrar sesión</a>
-      <form action="add" method="post">
-          <label>Introduzca temperatura:</label>
-          <input id="convert"  name="inicial" autofocus onchange="main();" placeholder="0K" size="15" />
-          <input id="temperatura" type="hidden" name="temperatura" value="vacio" />
-          <br /><br /><label>Temperatura convertida:</label>
-          <span id="converted" name="converted"></span>
-      </form>
-      
-     <h1>Temperatura convertidas:</h1>
-      <ul>
-        <% for (temperatura in temperaturas) { %>
-          <li><p><%=temperaturas[temperatura].inicial%> -> <a href="delete/<%=temperaturas[temperatura].id%>">Eliminar</a></p></li>
-        <% } %>
-      </ul>
+      <!--Si cerramos sesión se expira la cookie-->
+        <p id="logoutButton" onClick="doLogout()">Cerrar sesión</a>
+      </p>
+    </div>
+    
+    <form action="add" method="post">
+        <label>Introduzca temperatura:</label>
+        <input id="convert"  name="inicial" autofocus onchange="main();" placeholder="0K" size="15" />
+        <input id="estesi" type="hidden" name="estasi" value="vacio1" />
+        <input id="onlyname" type="hidden" name="onlyname" value="vacio2" />
+        <br /><br /><label>Temperatura convertida1:</label>
+        <span id="converted" name="converted"></span>
+    </form>
+    
+   <h1>Temperatura convertidas</h1>
+    <ul>
+      <% for (temperatura in temperaturas) { %>
+        <li><p><%=temperaturas[temperatura].inicial%> || <%=temperaturas[temperatura].final%>-> <a href="delete/<%=temperaturas[temperatura].id%>">Eliminar</a></p></li>
+         
+      <% } %>
+    </ul>
+  
+    
     </div>
  </div>
 <% include foot %>
