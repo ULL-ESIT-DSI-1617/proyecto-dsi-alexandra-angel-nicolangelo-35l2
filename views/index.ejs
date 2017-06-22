@@ -6,7 +6,7 @@
 <!-- onLoad es un evento que se ejecuta cuando se ha cargado la etiqueta -->
 <body onLoad="checkIfUserIsLoged()">
   <div class="container">
-    <h1>Conversor de Temperaturaaa</h1>
+    <h1>Conversor de Temperatura</h1>
     <div class="seccion_central">
     <div>
       <!--<span id="username" name="username"></span>-->
@@ -56,8 +56,7 @@
    <h1>Temperatura convertidas</h1>
     <ul>
       <% for (temperatura in temperaturas) { %>
-        <li><p><%=temperaturas[temperatura].inicial%> || <%=temperaturas[temperatura].final%>-> <a href="delete/<%=temperaturas[temperatura].id%>">Eliminar</a></p></li>
-         
+        <li><p><%=temperaturas[temperatura].inicial%> || <%=temperaturas[temperatura].final%> || <%=temperaturas[temperatura].name%> -> <a href="delete/<%=temperaturas[temperatura].id%>">Eliminar</a></p></li>
       <% } %>
     </ul>
   
