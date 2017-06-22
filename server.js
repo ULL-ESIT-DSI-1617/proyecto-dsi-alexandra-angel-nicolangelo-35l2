@@ -3,15 +3,11 @@ var  app = express();
 var Sqlite3 = require('sqlite3').verbose(),
     bodyParser = require('body-parser'),
     db = new Sqlite3.Database('temperaturas.sqlite');
-// app = module.exports = express();
 /* We add configure directive to tell express to use Pug to
    render templates */
-// app.set('view engine', 'html');
 app.use(express.static(__dirname + '/assets'));
-// app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 // See http://expressjs.com/en/api.html#app.engine
-// app.engine('pug', require('pug').__express); 
 
 // Allows express to get data from POST requests
 app.use(bodyParser.urlencoded({
@@ -42,14 +38,15 @@ db.on('trace', (m)=> console.log(`Consulta actual: ${m}`));
 
 // We render the templates with the data
 app.get('/', function(req, res) {
-    // res.render('index');
-    db.all('SELECT * FROM temperaturas ORDER BY inicial', function(err, rows) {
+    db.all("SELECT * FROM temperaturas ORDER BY inicial ", function(err, rows) {
         if(err !== null) {
             res.status(500).send("Un error ha ocurrido con la base de datos -- " + err);
         }
         else {
             res.render('index.ejs', {temperaturas: rows}, function(err, html) {
                 res.status(200).send(html);
+               
+                
             });
         }
     });
@@ -58,9 +55,9 @@ app.get('/', function(req, res) {
 
 // We define a new route that will handle bookmark creation
 app.post('/add', function(req, res) {
+    nombre = req.body.onlyname;
     inicial = req.body.inicial;
     final = req.body.estasi;
-    nombre = req.body.onlyname;
     sqlRequest = "INSERT INTO 'temperaturas' (inicial, final, name) VALUES('" + inicial + "', '" + final + "', '" + nombre + "')"
     db.run(sqlRequest, function(err) {
         if(err !== null) {

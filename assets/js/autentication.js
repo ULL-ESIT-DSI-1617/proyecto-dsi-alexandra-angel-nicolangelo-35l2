@@ -27,21 +27,23 @@ function doLogin() {
 function  checkIfExist(username, password){   
     /*Guarda usuarios que se pueden loguear*/
     var users = {
-        juan: "juanpassword",
-        pedro: "pedropassword",
+        juan: "juan",
+        pedro: "pedro",
         antonio: "antoniopassword",
         amy: "amyspassword"
     };
-
+    
     var correct = false;
     /*Comprobamos que el usuario y la contraseña son algunos de los que tenemos */
     for(user in users){
         if(username == user && password == users[user]) {
             correct = true;
             setCookie("username", username, 2);
+            
             console.log("Usuario logueado: ", getCookie("username"))
+            // document.getElementById("onlyname").value = username;
             /*Cambiamos de página */
-            window.location.href = "../pages/index.html";
+            window.location.href = "https://only-node-nico-apache.c9users.io/?username="+username+"";
             break;
         }
     }
