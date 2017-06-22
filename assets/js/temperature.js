@@ -16,7 +16,7 @@
     function Celsius(valor)
     {
       var c_tof = 0;
-      var c_tok = 0;
+      var c_toK = 0;
       console.log("Accedo a clase Celsius");
       Temperatura.call(this,valor,'c');
     }
@@ -30,8 +30,8 @@
     }
     Celsius.prototype.toKelvin = function()
     {
-      var f_toK = (this.valor + 273.15);
-      return new Kelvin(f_toK);
+      var c_toK =  (this.valor * 1) + 273.15 ;
+      return new Kelvin(c_toK);
     }
     
     
