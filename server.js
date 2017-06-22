@@ -3,15 +3,11 @@ var  app = express();
 var Sqlite3 = require('sqlite3').verbose(),
     bodyParser = require('body-parser'),
     db = new Sqlite3.Database('temperaturas.sqlite');
-// app = module.exports = express();
 /* We add configure directive to tell express to use Pug to
    render templates */
-// app.set('view engine', 'html');
 app.use(express.static(__dirname + '/assets'));
-// app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 // See http://expressjs.com/en/api.html#app.engine
-// app.engine('pug', require('pug').__express); 
 
 // Allows express to get data from POST requests
 app.use(bodyParser.urlencoded({

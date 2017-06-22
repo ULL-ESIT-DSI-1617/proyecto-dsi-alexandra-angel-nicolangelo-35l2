@@ -27,8 +27,8 @@ function doLogin() {
 function  checkIfExist(username, password){   
     /*Guarda usuarios que se pueden loguear*/
     var users = {
-        juan: "juanpassword",
-        pedro: "pedropassword",
+        juan: "juan",
+        pedro: "pedro",
         antonio: "antoniopassword",
         amy: "amyspassword"
     };
@@ -41,7 +41,7 @@ function  checkIfExist(username, password){
             setCookie("username", username, 2);
             console.log("Usuario logueado: ", getCookie("username"))
             /*Cambiamos de página */
-            window.location.href = "../pages/index.html";
+            window.location.href = "https://only-node-nico-apache.c9users.io/?username="+username+"";
             break;
         }
     }
