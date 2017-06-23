@@ -5,18 +5,14 @@ suite('temperature', function() {
         var valor = Medida.convertir("32F to C");
         assert.deepEqual(valor, "0 Celsius");
     });
-    /*
     test('45C = 113.0 Farenheit', function() {
-        convert.value = "45C to F";
-        main();
-        assert.deepEqual(converted.innerHTML, "113 Farenheit");
+        var valor = Medida.convertir("45C to F");
+        assert.deepEqual(valor, "113 Farenheit");
     });
     test('5X = error', function() {
-        convert.value = "5X to F";
-        main();
-        assert.match(converted.innerHTML, /Desconozco como convertir desde "x" hasta "f"/);
+        var valor = Medida.convertir("5X to F");
+        assert.match(valor, /Desconozco como convertir desde "x" hasta "f"/);
     });
-    */
 });
 
 //funciona pls vamos
