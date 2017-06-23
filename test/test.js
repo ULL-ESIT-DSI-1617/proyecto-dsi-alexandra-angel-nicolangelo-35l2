@@ -11,7 +11,7 @@ suite('temperature', function() {
     });
     test('300K = 80.33 Farenheit', function() {
         var valor = Medida.convertir("300K to F");
-        assert.deepEqual(valor, "80.33000000000004 Kelvin");
+        assert.deepEqual(valor, "80.33000000000004 Farenheit");
     });
     test('273.15K = 0 Celsius', function() {
         var valor = Medida.convertir("273.15K to C");
@@ -21,9 +21,9 @@ suite('temperature', function() {
         var valor = Medida.convertir("45C to F");
         assert.deepEqual(valor, "113 Farenheit");
     });
-    test('0F = 273.15 Kelvin', function() {
-        var valor = Medida.convertir("0F to K");
-        assert.deepEqual(valor, "273.14999999999998 Kelvin");
+    test('0C = 273.15 Kelvin', function() {
+        var valor = Medida.convertir("0C to K");
+        assert.deepEqual(valor, "273.15 Kelvin");
     });
     test('5X = error', function() {
         var valor = Medida.convertir("5X to F");
