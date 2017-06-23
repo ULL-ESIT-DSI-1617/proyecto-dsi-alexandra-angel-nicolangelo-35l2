@@ -41,7 +41,7 @@ function  checkIfExist(username, password){
             setCookie("username", username, 2);
             console.log("Usuario logueado: ", getCookie("username"))
             /*Cambiamos de página */
-            window.location.href = "https://only-node-nico-apache.c9users.io/?username="+username+"";
+            window.location.href = "https://dsi2-alex-94.c9users.io/?username="+username+"";
             break;
         }
     }
