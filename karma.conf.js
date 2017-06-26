@@ -1,5 +1,5 @@
 module.exports = function(config) {
-	var options = {
+	var configuration = {
 
 		plugins: [
 			'karma-chrome-launcher',
@@ -100,8 +100,8 @@ module.exports = function(config) {
    
 	 
 		if (process.env.TRAVIS) {
-    		options.browsers = ['Chrome_travis_ci'];
+    		configuration.browsers = ['Chrome_travis_ci'];
 		}
 
-	config.set(options);
+	config.set(configuration);
 };
