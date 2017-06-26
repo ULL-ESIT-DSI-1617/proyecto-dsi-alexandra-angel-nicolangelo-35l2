@@ -1,24 +1,43 @@
-var chai = "chai.js"; 
 var assert = chai.assert;
-var convert = "32F to C";
-var mainn = "../assets/js/main.js";
-var temperature = "../assets/js/temperature.js";
-var medida = "../assets/js/medida.js";
 
 suite('temperature', function() {
     test('32F = 0 Celsius', function() {
-        convert.value = "32F to C";
-        main();
-        assert.deepEqual(converted.innerHTML, "0 Celsius");
+        var valor = Medida.convertir("32F to C");
+        assert.deepEqual(valor, "0 Celsius");
+    });
+    test('0.32F = 255.55 Kelvin', function() {
+        var valor = Medida.convertir("0.32F to K");
+        assert.deepEqual(valor, "255.54999999999998 Kelvin");
+    });
+    test('300K = 80.33 Farenheit', function() {
+        var valor = Medida.convertir("300K to F");
+        assert.deepEqual(valor, "80.33000000000004 Farenheit");
+    });
+    test('273.15K = 0 Celsius', function() {
+        var valor = Medida.convertir("273.15K to C");
+        assert.deepEqual(valor, "0 Celsius");
     });
     test('45C = 113.0 Farenheit', function() {
-        convert.value = "45C to F";
-        main();
-        assert.deepEqual(converted.innerHTML, "113 Farenheit");
+        var valor = Medida.convertir("45C to F");
+        assert.deepEqual(valor, "113 Farenheit");
+    });
+    test('0C = 273.15 Kelvin', function() {
+        var valor = Medida.convertir("0C to K");
+        assert.deepEqual(valor, "273.15 Kelvin");
     });
     test('5X = error', function() {
-        convert.value = "5X to F";
-        main();
-        assert.match(converted.innerHTML, /Desconozco como convertir desde "x" hasta "f"/);
+        var valor = Medida.convertir("5X to F");
+        assert.match(valor, /Desconozco como convertir desde "x" hasta "f"/);
+    });
+    test('5Y = error', function() {
+        var valor = Medida.convertir("5Y to K");
+        assert.match(valor, /Desconozco como convertir desde "y" hasta "k"/);
+    });
+    test('5Z = error', function() {
+        var valor = Medida.convertir("5Z to C");
+        assert.match(valor, /Desconozco como convertir desde "z" hasta "c"/);
     });
 });
+
+//funciona pls vamos
+

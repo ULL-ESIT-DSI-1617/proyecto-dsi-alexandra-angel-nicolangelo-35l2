@@ -28,11 +28,12 @@ module.exports = function(config) {
 
 		// list of files / patterns to load in the browser
 	files: [
-		  'test/*.js',
+		  'test/test.js',
+      'test/xregexp-all.js',
 		  'assets/js/medida.js',
 		  'assets/js/temperature.js',
 		  'assets/js/main.js',
-		  'assets/js/index.html'
+		  'assets/js/index.html',
 		],
 
 
@@ -99,7 +100,7 @@ module.exports = function(config) {
 		};
 		options.browsers = [
 			'Chrome_travis_ci',
-			'Firefox'
+			//'Firefox'
 		];
 	}
 
