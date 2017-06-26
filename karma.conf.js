@@ -2,7 +2,7 @@ module.exports = function(config) {
 	var options = {
 
 		plugins: [
-			//'karma-chrome-launcher',
+			'karma-chrome-launcher',
 			'karma-firefox-launcher',
 			'karma-html2js-preprocessor',
 			'karma-mocha',
@@ -75,7 +75,7 @@ module.exports = function(config) {
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
 		browsers: [
-			'Firefox'],
+			'Chrome','Firefox'],
 
 
 		// If browser does not capture in given timeout [ms], kill it
@@ -93,13 +93,13 @@ module.exports = function(config) {
 
 	if (process.env.TRAVIS) {
 		options.customLaunchers = {
-			// Chrome_travis_ci: {
-			// 	base: 'Chrome',
-			// 	flags: ['--no-sandbox']
-			// }
+			Chrome_travis_ci: {
+				base: 'Chrome',
+				flags: ['--no-sandbox']
+			}
 		};
 		options.browsers = [
-			//'Chrome_travis_ci',
+			'Chrome_travis_ci',
 			//'Firefox'
 		];
 	}
