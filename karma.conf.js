@@ -88,21 +88,20 @@ module.exports = function(config) {
 
 		// Concurrency level
 		// how many browser should be started simultaneous
-		concurrency: Infinity
+		concurrency: Infinity,
+		
+		customLaunchers: {
+        Chrome_travis_ci: {
+            base: 'Chrome',
+            flags: ['--no-sandbox']
+        }
+    }
 	};
-
-	if (process.env.TRAVIS) {
-		options.customLaunchers = {
-			Chrome_travis_ci: {
-				base: 'Chrome',
-				flags: ['--no-sandbox']
-			}
-		};
-		options.browsers = [
-			'Chrome_travis_ci',
-			//'Firefox'
-		];
-	}
+   
+	 
+		if (process.env.TRAVIS) {
+    		options.browsers = ['Chrome_travis_ci'];
+		}
 
 	config.set(options);
 };
