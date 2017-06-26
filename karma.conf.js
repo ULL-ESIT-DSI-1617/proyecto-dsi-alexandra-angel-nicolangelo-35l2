@@ -95,7 +95,7 @@ module.exports = function(config) {
 		options.customLaunchers = {
 			Chrome_travis_ci: {
 				base: 'Chrome',
-				flags: ['--no-sandbox']
+				flags: ['']
 			}
 		};
 		options.browsers = [
