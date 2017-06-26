@@ -2,7 +2,7 @@ module.exports = function(config) {
 	var options = {
 
 		plugins: [
-			'karma-chrome-launcher',
+			//'karma-chrome-launcher',
 			'karma-firefox-launcher',
 			'karma-html2js-preprocessor',
 			'karma-mocha',
