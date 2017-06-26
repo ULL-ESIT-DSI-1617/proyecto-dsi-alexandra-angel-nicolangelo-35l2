@@ -30,7 +30,7 @@
     }
     Celsius.prototype.toKelvin = function()
     {
-      var f_toK = (this.valor + 273.15);
+      var f_toK = ((this.valor * 1) + 273.15);
       return new Kelvin(f_toK);
     }
     

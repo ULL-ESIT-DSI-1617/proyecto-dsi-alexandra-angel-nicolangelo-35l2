@@ -7,7 +7,7 @@
         elemento.innerHTML = Medida.convertir(valor);
         //enviamos al index la temperatura final para su inclusion en la base de datos
         t_convertida = document.getElementById("temperatura").value = Medida.convertir(valor);
-        return false;
+        return t_convertida;
     }
     exports.main = main;
 })(this);

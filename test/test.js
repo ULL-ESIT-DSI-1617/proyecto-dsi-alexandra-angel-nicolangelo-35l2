@@ -1,4 +1,4 @@
-var chai = "chai.js";
+var chai = "chai.js"; 
 var assert = chai.assert;
 var convert = "32F to C";
 var mainn = "../assets/js/main.js";
@@ -22,5 +22,3 @@ suite('temperature', function() {
         assert.match(converted.innerHTML, /Desconozco como convertir desde "x" hasta "f"/);
     });
 });
-
-//funciona pls vamos
