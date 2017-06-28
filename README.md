@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ULL-ESIT-DSI-1617/proyecto-dsi-alexandra-angel-nicolangelo-35l2.svg?branch=master)](https://travis-ci.org/ULL-ESIT-DSI-1617/proyecto-dsi-alexandra-angel-nicolangelo-35l2)
 # Proyecto Final
 
 ## Enlace a la Práctica
@@ -7,6 +8,8 @@
 
 Escriba una aplicación web usando las tecnologías vistas durante el curso: 
 ECMA6, Node.js, expressJS, SASS, Pruebas, etc. El tema de la aplicación es de libre elección.
+
+##Herramientas utilizadas
 
 ## Asignatura
 * [Desarrollo de Sistemas Informáticos](https://campusvirtual.ull.es/1617/course/view.php?id=1136) de La Universidad de La Laguna.

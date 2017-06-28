@@ -5,7 +5,6 @@
         var valor = document.getElementById('convert').value,
             elemento = document.getElementById('converted');
         elemento.innerHTML = Medida.convertir(valor);
-        convertido = document.getElementById("estesi").value =  Medida.convertir(valor);
         return false;
     }
     exports.main = main;
@@ -52,5 +51,5 @@ function doLogout() {
     /*Coge las cookies que tiene en ese documento*/
     document.cookie = "username=;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
     console.log(getCookie("username"))
-    window.location.href = "login.html";
+    window.location.href = "../pages/login.html";
 }

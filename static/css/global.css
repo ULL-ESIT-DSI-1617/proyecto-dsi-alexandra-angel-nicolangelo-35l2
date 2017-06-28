@@ -28,26 +28,10 @@ h1 {
     border-radius: 10px 10px 10px 10px;
 }
 
-h2 {
-    font-weight: normal;
-    font-family: "Brush Script MT", cursive;
-    /*background: #3C5681;*/
-    padding: 20px 10px 10px;
-    /*color: white;*/
-    display:inline-block;
-    border-radius: 10px 10px 10px 10px;
-}
-
-#menu {
-    font-family: "Brush Script MT", cursive;
-    color: black;
-    font-size: 40px;
-}
-
 /* Login Style */
 #headerLogin {
     width: 400px;
-    margin: 50 550 auto;
+    margin: 0 auto;
     border-radius: 10px;
     background: #3C5681;
     padding: 5px 15px;
@@ -56,7 +40,7 @@ h2 {
 
 #wrapForm {
     text-align: center;
-    margin: 20 auto;
+    margin: 0 auto;
 }
 
 #wrapForm label {
@@ -64,15 +48,14 @@ h2 {
 }
 
 #loginButton {
-    width: 200px;
+    width: 100px;
     height: 30px;
     border-radius: 10px;
     padding: 5px 10px 0px 10px;
     background-color: lightblue;
     border: 2px #3C5681 solid;
-    font-family: cursive;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     margin: 0 auto;
 }
 
