@@ -9,7 +9,6 @@
 Escriba una aplicación web usando las tecnologías vistas durante el curso: 
 ECMA6, Node.js, expressJS, SASS, Pruebas, etc. El tema de la aplicación es de libre elección.
 
-##Herramientas utilizadas
 
 ## Asignatura
 * [Desarrollo de Sistemas Informáticos](https://campusvirtual.ull.es/1617/course/view.php?id=1136) de La Universidad de La Laguna.
