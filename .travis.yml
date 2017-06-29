@@ -10,3 +10,6 @@ before_script:
     - export CHROME_BIN=chromium-browser
     - export DISPLAY=:99.0
     - sh -e /etc/init.d/xvfb start
+    - chown -R root /usr/lib/chromium-browser/chrome-sandbox
+    - chmod 4755 /usr/lib/chromium-browser/chrome-sandbox
+
