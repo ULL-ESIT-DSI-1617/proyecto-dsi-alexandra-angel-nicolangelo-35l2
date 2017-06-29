@@ -112,7 +112,7 @@ app.post('/register', function (req, res) {
 });
 
 //Conversor//
-app.get('/index', function(req,res){
+app.get('/content', function(req,res){
   res.render('index');
 
 });
