@@ -124,7 +124,6 @@ app.get('/register', function (req, res) {
 
 //Se registran los usuarios nuevos en el fichero users.json
 app.post('/register', function (req, res) {
-
     var configFile = fs.readFileSync(file);
     var config = JSON.parse(configFile);
     config.push({"username" : req.body.username, "password" : bcrypt.hashSync(req.body.password, salt) });
@@ -142,9 +141,27 @@ app.get('/index', function(req,res){
             res.status(500).send("Un error ha ocurrido con la base de datos -- " + err);
         }
         else {
-            res.render('index.ejs', {temperaturas: rows},function(err, html) {
-                    res.status(200).send(html);
-            });
+                var size = Object.keys(rows).length;
+                console.log("rows: " + size);
+                //el usuario tiene registros en la bdd
+                if (size !==0){
+                res.render('index.ejs', {temperaturas: rows},function(err, html) {
+                        res.status(200).send(html);
+                });}
+                else{
+                    //el usuario aún no ha hecho niguna consulta por lo que la bdd para ese usuario está vacia
+                    var element = {};
+                    element.name = req.session.username;
+                    element.id = 0;
+                    element.inicial = "consulta";
+                    element.final = "inicial para";
+                    rows.push(element);
+                    size = Object.keys(rows).length;
+                    console.log("rows: " + size);
+                     res.render('index.ejs', {temperaturas: rows},function(err, html) {
+                        res.status(200).send(html);
+                });
+                }
         }
     });
 
@@ -152,9 +169,9 @@ app.get('/index', function(req,res){
 
 // We define a new route that will handle bookmark creation
 app.post('/add', function(req, res) {
-    nombre = req.session.username;
     inicial = req.body.inicial;
     final = req.body.estesi;
+    nombre = req.session.username;
     sqlRequest = "INSERT INTO 'temperaturas' (inicial, final, name) VALUES('" + inicial + "', '" + final + "', '" + nombre + "')"
     db.run(sqlRequest, function(err) {
         if(err !== null) {
