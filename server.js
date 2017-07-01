@@ -61,34 +61,21 @@ db.get("SELECT name FROM sqlite_master WHERE type='table' AND name='temperaturas
 });
 
 db.on('trace', (m)=> console.log(`Consulta actual: ${m}`));
-//MENU//
-/*var instrucciones = `
-<h1>Visita los siguientes enlaces para ver el contenido, loguearte, cerrar sesión o registrarte: </h1>
-<ul>
-  <li> <a href="/content">Contenido</a> </li>
-  <li> <a href="/login">Iniciar sesión</a> </li>
-  <li> <a href="/logout">Cerrar sesión</a> </li>
-  <li> <a href="/register">Registrarse</a> </li>
-</ul>
-`;*/
 
 //Nos redirige al fichero menu.ejs
 app.get('/', function(req,res){
 	res.render('menu');
-  //res.send(instrucciones);
 });
 
 
 //Fase de login //
-//Nos redirige al html para introducir los datos
+//Nos redirige al login para introducir los datos
 app.get('/login', function (req, res) {
   if ( (!req.session.username)) {
     res.render('login'); //Redirigir al fichero login.ejs
   }
   else if ((req.session.username)) {
-    res.render('logincompleto', {username:req.session.username}); //redirigir el fichero logincompleto.ejs
-	//return res.render('index');
-  	
+    res.render('logincompleto', {username:req.session.username}); //redirigir el fichero logincompleto.ej  	
   }
 });
 
