@@ -5,14 +5,17 @@
   </head>
 <!-- onLoad es un evento que se ejecuta cuando se ha cargado la etiqueta -->
 <body onLoad="checkIfUserIsLoged()">
-  <div >
+  <div class="container">
     <h1>Conversor de Temperatura</h1>
     <div class="seccion_central">
     <div>
-      <!--mostramos el nombre segun nos lo envia la bdd-->
-      <p>Bienvenido, <%=temperaturas[0].name%> <input type="button" onclick="location.href='/logout';" value="Cerrar Sesión" /> </p>
-      <!--Si cerramos sesión se expira la cookie-->
       
+      <p>Bienvenido, 
+      <!--mostramos el nombre segun nos lo envia la bdd-->
+         <%=temperaturas[0].name%>
+      </p>
+      <!--Si cerramos sesión se expira la cookie-->
+       <button><a href="/logout">Cerrar sesión</a></button>
     </div>
     <form action="add" method="post">
         <label>Introduzca temperatura:</label>
@@ -23,6 +26,7 @@
     </form>
     
    <h1>Temperatura convertidas</h1>
+   <!--log de las consultas hechas por ese usuario-->
     <ul>
       <% for (temperatura in temperaturas) { %>
         <li><p><%=temperaturas[temperatura].inicial%> || <%=temperaturas[temperatura].final%> || <%=temperaturas[temperatura].name%> -> <a href="delete/<%=temperaturas[temperatura].id%>">Eliminar</a></p></li>
