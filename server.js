@@ -71,14 +71,13 @@ app.get('/', function(req,res){
 
 
 //Fase de login //
-//Nos redirige al html para introducir los datos
+//Nos redirige al login para introducir los datos
 app.get('/login', function (req, res) {
   if ( (!req.session.username)) {
     res.render('login'); //Redirigir al fichero login.ejs
   }
   else if ((req.session.username)) {
-    res.render('logincompleto', {username:req.session.username}); //redirigir el fichero logincompleto.ejs
-
+    res.render('logincompleto', {username:req.session.username}); //redirigir el fichero logincompleto.ej  	
   }
 });
 
