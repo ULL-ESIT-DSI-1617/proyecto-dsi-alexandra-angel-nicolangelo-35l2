@@ -45,6 +45,7 @@
     "karma-phantomjs-launcher": "*",
     "mocha": "*",
     "node": "0.0.0",
+    "sqlite3": "*",
     "pbkdf2-password": "^1.2.1",
     "travis": "*"
   }
