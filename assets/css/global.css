@@ -16,12 +16,15 @@ body
  background-image: url(https://i1.wp.com/medioambienteynaturaleza.com/wp-content/uploads/2015/08/Fondos-de-pantalla-de-naturaleza-ar.jpg);
  /*background-color:#b0c4de;*/  /* blue */
  font-size:large;
- font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+ /*font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;*/
+ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
 }
 
 h1 {
     font-weight: normal;
-    font-family: "Brush Script MT", cursive;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*font-family: "Brush Script MT", cursive;*/
     background: #3C5681;
     padding: 5px 15px;
     color: white;
@@ -31,7 +34,7 @@ h1 {
 
 h2 {
     font-weight: normal;
-    font-family: "Brush Script MT", cursive;
+    /*font-family: "Brush Script MT", cursive;*/
     /*background: #3C5681;*/
     padding: 20px 10px 10px;
     /*color: white;*/
@@ -88,7 +91,8 @@ h2 {
 }
 
 #wrapForm label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #loginButton {
@@ -102,7 +106,8 @@ h2 {
     /*font-weight: 50px;*/
     /*font-family: cursive;*/
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-    font-family: 'Open Sans',sans-serif;
+    /*font-family: 'Open Sans',sans-serif;*/
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 17px;
     margin: 0 auto;
 }
