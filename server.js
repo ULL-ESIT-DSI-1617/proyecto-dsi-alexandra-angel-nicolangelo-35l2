@@ -5,7 +5,6 @@ var cookieParser = require('cookie-parser');
 var fs = require('fs');
 var bcrypt = require('bcrypt-nodejs');
 var salt = bcrypt.genSaltSync(10);
-var bodyParser = require('body-parser');
 var Sqlite3 = require('sqlite3').verbose(),
     bodyParser = require('body-parser'),
     db = new Sqlite3.Database('temperaturas.sqlite');
