@@ -1,24 +1,42 @@
 th, td      {
                vertical-align: top;
                text-align: right;
-               font-size:large;
-               // border: 1px solid black;
+               font-size: large;
+               border: 1px solid black;
             }     /* Don't center table cells  */
+
 #converted  { color: red; font-weight: bold; font-size:large;          }     /* Calculated values in bold */
+
 input       {
               text-align: right;       /* Align input to the right  */
               border: none;
               border-radius: 20px 20px 20px 20px;
               padding: 5px  5px;
-              font-size:large;       }
-body
-{
- background-image: url(https://i1.wp.com/medioambienteynaturaleza.com/wp-content/uploads/2015/08/Fondos-de-pantalla-de-naturaleza-ar.jpg);
- /*background-color:#b0c4de;*/  /* blue */
- font-size:large;
- /*font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;*/
- font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              font-size:large;       
+            
+            }
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    /*background-image: url(https://i1.wp.com/medioambienteynaturaleza.com/wp-content/uploads/2015/08/Fondos-de-pantalla-de-naturaleza-ar.jpg);*/
+    background-image: url(https://i2.wp.com/hipertextual.com/files/2017/03/color-degradado-fondos-degradados-multicolor-51200.jpg?fit=1920%2C1200&ssl=1);
+    font-size:150%;
+    font-family: "Monaco", monospace;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
+}
+.letra  {
+    /*padding-top: 5px;*/
+    /*font-size: 100%;*/
 }
 
 h1 {
@@ -34,7 +52,7 @@ h1 {
 
 h2 {
     font-weight: normal;
-    /*font-family: "Brush Script MT", cursive;*/
+    font-family: "Brush Script MT", cursive;
     /*background: #3C5681;*/
     padding: 20px 10px 10px;
     /*color: white;*/
@@ -49,21 +67,17 @@ h2 {
 }
 
 #username {
-    background-color: grey;
+    background-color: #D8D8D8;
     width: 250px;
     height: 30px;
 }
 
 #password {
-    background-color: grey;
+    background-color: #D8D8D8;
     width: 250px;
     height: 30px;
 }
 
-.letra  {
-    padding-top: 5px;
-    font-size: 25px;
-}
 
 /* Login Style */
 #headerLogin {
@@ -106,8 +120,7 @@ h2 {
     /*font-weight: 50px;*/
     /*font-family: cursive;*/
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-    /*font-family: 'Open Sans',sans-serif;*/
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans',sans-serif;
     font-size: 17px;
     margin: 0 auto;
 }
