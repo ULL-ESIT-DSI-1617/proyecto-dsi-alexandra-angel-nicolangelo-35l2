@@ -8,6 +8,19 @@
 Escriba una aplicación web usando las tecnologías vistas durante el curso: 
 ECMA6, Node.js, expressJS, SASS, Pruebas, etc. El tema de la aplicación es de libre elección.
 
+## Tecnologías utilizadas
+* `NodeJS`: nuestro servidor corre bajo en NodeJS
+* `Express`: Hemos utilizado esta tecnología, porque nos permite crear un servidor mínimo con NodeJS.
+* `Rutas de ExpressJS`: Utilizamos diferentes rutas dentro del servidor NodeJS, para así poder redirigir a los usuarios que están registrados y los que no.
+* `SQLite3`: Utilizamos esta tecnología para guardar las consultas hechas por cada usuario.
+* `Sessions`: Login, logout, register.
+* `bcrypt-nodejs`: Nos permite cifrar strings para no almacenar texto plano en la base de datos.
+* `body-parser`: Parsea la URL de una petición HTTP y la convierte en un JSON.
+* `pruebas`: Mocha, chai, karma y travis. Las pruebas han sido ejecutadas en los navegadores chrome y firefox.
+* Implememtando cada una de las conversiones que se puede hacer en el conversor de temperatura y sus respectivos errores.
+
+## Despliegue de la aplicación
+
 ## Asignatura
 * [Desarrollo de Sistemas Informáticos](https://campusvirtual.ull.es/1617/course/view.php?id=1136) de La Universidad de La Laguna.
 * Curso: 2016-2017
