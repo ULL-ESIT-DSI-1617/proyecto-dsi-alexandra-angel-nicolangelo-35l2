@@ -40,6 +40,7 @@ Casiano Rodríguez León
 
 [Nicolangelo Famiglietti](https://alu0100912005.github.io)
 * [GitHub](https://github.com/alu0100912005)
+* [Despliegue Heroku](https://still-savannah-58316.herokuapp.com)
 
 ## Enlace del grupo
 [Enlace al grupo en GitHub](https://github.com/ULL-ESIT-DSI-1617/proyecto-dsi-alexandra-angel-nicolangelo-35l2)
