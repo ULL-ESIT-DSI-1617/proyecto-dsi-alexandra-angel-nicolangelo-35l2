@@ -10,7 +10,7 @@
     <div class="seccion_central">
     <div>
       <!--mostramos el nombre segun nos lo envia la bdd-->
-      <p>Bienvenido, <%=temperaturas[0].name%> <input type="button" onclick="location.href='/logout';" value="Cerrar Sesión" /> </p>
+      <p>Bienvenido, <%=temperaturas[0].name%> <input type="button" onclick="location.href='/logout';" value="Log out" /> </p>
       <!--Si cerramos sesión se expira la cookie-->
       
     </div>
@@ -25,7 +25,7 @@
    <h1>Temperatura convertidas</h1>
     <ul>
       <% for (temperatura in temperaturas) { %>
-        <li><p><%=temperaturas[temperatura].inicial%> || <%=temperaturas[temperatura].final%> || <%=temperaturas[temperatura].name%> -> <a href="delete/<%=temperaturas[temperatura].id%>">Eliminar</a></p></li>
+        <li><p><%=temperaturas[temperatura].inicial%> || <%=temperaturas[temperatura].final%> || <%=temperaturas[temperatura].name%> -> <a href="delete/<%=temperaturas[temperatura].id%>">Delete</a></p></li>
       <% } %>
     </ul>
   
