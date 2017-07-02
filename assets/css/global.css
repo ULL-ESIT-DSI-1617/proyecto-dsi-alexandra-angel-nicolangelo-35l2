@@ -1,7 +1,7 @@
 th, td      {
                vertical-align: top;
                text-align: right;
-               font-size:large;
+               font-size: large;
                border: 1px solid black;
             }     /* Don't center table cells  */
 
@@ -12,7 +12,7 @@ input       {
               border: none;
               border-radius: 20px 20px 20px 20px;
               padding: 5px  5px;
-              font-size:large;       
+              font-size: large;       
             
             }
 html, body {
@@ -26,7 +26,6 @@ html {
 
 body {
     display: table-cell;
-    /*background-image: url(https://i1.wp.com/medioambienteynaturaleza.com/wp-content/uploads/2015/08/Fondos-de-pantalla-de-naturaleza-ar.jpg);*/
     background-image: url(https://i2.wp.com/hipertextual.com/files/2017/03/color-degradado-fondos-degradados-multicolor-51200.jpg?fit=1920%2C1200&ssl=1);
     font-size:150%;
     font-family: "Monaco", monospace;
@@ -34,15 +33,11 @@ body {
     background-attachment: fixed;
     
 }
-.letra  {
-    /*padding-top: 5px;*/
-    /*font-size: 100%;*/
-}
 
 h1 {
     font-weight: normal;
-    font-family: "Brush Script MT", cursive;
-    background: #3C5681;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #57d58d;
     padding: 5px 15px;
     color: white;
     display:inline-block;
@@ -51,10 +46,8 @@ h1 {
 
 h2 {
     font-weight: normal;
-    font-family: "Brush Script MT", cursive;
-    /*background: #3C5681;*/
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     padding: 20px 10px 10px;
-    /*color: white;*/
     display:inline-block;
     border-radius: 10px 10px 10px 10px;
 }
@@ -77,25 +70,26 @@ h2 {
     height: 30px;
 }
 
+
 /* Login Style */
 #headerLogin {
     width: 400px;
     margin: 170 550 auto;
     border-radius: 10px;
-    background:  #19cb43 ;
+    background: #57d58d;
     padding: 5px 15px;
     text-align: center;
 }
 
 #fondo {
-    /*background:  #19cb43 ;*/
     background: white;
     opacity:0.7;
     border-radius: 10px;
     width: 400px;
-    height: 250px;
-    margin: 100 550 auto;
+    height: 370px;
+    margin: 45 550 auto;
     padding: 5px 15px;
+    text-align: center;
 }
 #wrapForm {
     text-align: center;
@@ -103,20 +97,16 @@ h2 {
 }
 
 #wrapForm label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #loginButton {
     width: 250px;
     height: 45px;
-    /*border-radius: 10px;*/
     padding: 5px 10px 0px 10px;
     background-color: #19cb43 ;
-    /*border: 2px #3C5681 solid;*/
     color: white;
-    /*font-weight: 50px;*/
-    /*font-family: cursive;*/
-    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-family: 'Open Sans',sans-serif;
     font-size: 17px;
     margin: 0 auto;
