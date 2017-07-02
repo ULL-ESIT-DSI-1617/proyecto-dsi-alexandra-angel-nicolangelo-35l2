@@ -10,6 +10,7 @@ var Sqlite3 = require('sqlite3').verbose(),
     bodyParser = require('body-parser'),
     db = new Sqlite3.Database('temperaturas.sqlite');
 
+
 //archivo donde se guardan los usuarios//
 var file = './users.json';
 
@@ -40,6 +41,7 @@ var auth = function(req, res, next) {
 
 //Ruta estática para ver el contenido, se necesita haber iniciado previamente sesion
 app.use(express.static(__dirname+'/assets/'));
+
 // Database initialization
 db.get("SELECT name FROM sqlite_master WHERE type='table' AND name='temperaturas'", function(err, row) {
     if(err !== null) {
@@ -174,13 +176,12 @@ app.get('/delete/:id', function(req, res) {
     });
 });
 
+
 //Cerrar sesion //
 app.get('/logout', function(req,res){
   req.session.destroy();
   res.render('logout');
 });
-
-
 
 var port = process.env.PORT || 8080;
 app.listen(port);
