@@ -125,27 +125,31 @@ app.post('/register', function (req, res) {
 //Conversor//
 app.get('/index', function(req,res){
 //enseñamos solo los valores en la bdd del usuario actual
-  db.all("SELECT * FROM temperaturas WHERE name='" + req.session.username + "' ORDER BY inicial ", function(err, rows) {
-        if(err !== null) {
-            res.status(500).send("Un error ha ocurrido con la base de datos -- " + err);
-        }
-        else {
-            var size = Object.keys(rows).length;
-            //el usuario aún no ha hecho niguna consulta por lo que la bdd para ese usuario está vacia
-            if (size ==0){
-                var element = {};
-                element.name = req.session.username;
-                element.id = 0;
-                element.inicial = "consulta";
-                element.final = "inicial para";
-                rows.push(element);
+  if ( (!req.session.username)) {
+    res.render('login'); //Redirigir al fichero login.ejs
+  }
+  else{
+      db.all("SELECT * FROM temperaturas WHERE name='" + req.session.username + "' ORDER BY inicial ", function(err, rows) {
+            if(err !== null) {
+                res.status(500).send("Un error ha ocurrido con la base de datos -- " + err);
             }
-            res.render('index.ejs', {temperaturas: rows},function(err, html) {
-                res.status(200).send(html);
-            });
-        }
-    });
-
+            else {
+                var size = Object.keys(rows).length;
+                //el usuario aún no ha hecho niguna consulta por lo que la bdd para ese usuario está vacia
+                if (size ==0){
+                    var element = {};
+                    element.name = req.session.username;
+                    element.id = 0;
+                    element.inicial = "consulta";
+                    element.final = "inicial para";
+                    rows.push(element);
+                }
+                res.render('index.ejs', {temperaturas: rows},function(err, html) {
+                    res.status(200).send(html);
+                });
+            }
+        });
+    }
 });
 
 // We define a new route that will handle bookmark creation
